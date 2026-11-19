@@ -7,6 +7,12 @@ from qiskit_aer import AerSimulator
 st.set_page_config(page_title="Farmacología Cuántica", page_icon="💊")
 st.title("💊 Optimizador Cuántico de Medicación")
 st.write("Sistema de apoyo clínico basado en Qiskit para encontrar combinaciones seguras de fármacos.")
+with st.expander("ℹ️ ¿Cómo funciona esta herramienta?", expanded=True):
+    st.markdown("""
+    * **Objetivo:** Encontrar la combinación de fármacos más eficaz y segura usando cúbits.
+    * **Uso:** Cambia los números de la tabla haciendo doble clic y pulsa el botón azul de abajo.
+    """)
+
 
 st.sidebar.header("⚙️ Parámetros del Paciente")
 max_pastillas = st.sidebar.slider("Número exacto de fármacos a recetar:", 1, 3, 2)
